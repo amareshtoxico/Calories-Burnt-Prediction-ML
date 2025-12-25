@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
+    color: #eaeaea;
+    min-height: 100vh;
+}
+
+.app-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.app-header h1 {
+    font-size: 2.5rem;
+}
+
+.app-header p {
+    color: #b5b5c3;
+    margin-top: 6px;
+}
+
+.card {
+    background: #14142b;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #a0a0c0;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+input, select {
+    background: #1f1f3d;
+    border: 1px solid #2f2f55;
+    border-radius: 10px;
+    padding: 12px;
+    color: white;
+}
+
+input:focus, select:focus {
+    border-color: #7b6cff;
+    outline: none;
+}
+
+.predict-btn, .demo-btn {
+    grid-column: 1 / -1;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.predict-btn {
+    background: linear-gradient(135deg, #7b6cff, #5f2cff);
+    color: white;
+}
+
+.demo-btn {
+    background: #2b2b5f;
+    color: #bdbdff;
+}
+
+.predict-btn:hover, .demo-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Result */
+.result-box {
+    margin-top: 30px;
+    padding: 20px;
+    background: #1f1f3d;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.result-box span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Confidence Bar */
+.confidence {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.bar {
+    height: 12px;
+    background: #2f2f55;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4caf50, #8bc34a);
+    animation: fillBar 1s ease-in-out forwards;
+}
+
+@keyframes fillBar {
+    from { width: 0; }
+}
+
+/* Error UI */
+.error {
+    margin-top: 20px;
+    padding: 12px;
+    background: #4a1f2b;
+    border-left: 4px solid #ff4d4d;
+    border-radius: 8px;
+    color: #ffbaba;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.85rem;
+}
