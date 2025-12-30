@@ -1,6 +1,7 @@
 
 
 # 🔥 Calories Burnt Prediction – Machine Learning Web Application
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20App-success?style=for-the-badge&logo=render)](https://calories-burnt-prediction-ml.onrender.com)
 
 An end-to-end **Machine Learning powered web application** that predicts the number of calories burnt during physical activity based on user fitness and health parameters.
 
